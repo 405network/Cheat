@@ -1,0 +1,23 @@
+# Add a New Group
+groupadd <groupname>
+
+# Add an Existing User to a Group
+usermod -a -G <groupname> username
+
+# Change a User’s Primary Group
+usermod -g <groupname> username
+
+# View a User’s Group Assignments
+id <username>
+
+# Add a New User and Assign a Group in One Command
+useradd -g <groupname> username
+
+# Add password for new user
+passwd <username>
+
+# Add a User to Multiple Groups
+usermod -a -G ftp,admins,othergroup <username>
+
+
+

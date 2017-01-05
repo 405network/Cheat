@@ -1,0 +1,5 @@
+# Change or update your hostname
+hostnamectl set-hostname <myhost.example.com>
+
+# Hostname status
+hostnamectl status

@@ -1,0 +1,41 @@
+# Create a user who is a member of the groups1 and 2, with UID 1201 and add a home directory.
+useradd -m -u <UID> -G <group1>,<group2> <username>
+-m = homedirectory
+-G = group
+-u = UID number
+Example: useradd -m -u 1201 -G sales,ops linda
+Files Impacted
+/etc/skel = The skeleton directory contains files that are copied to the user home directory at the moment this directory is created. These files will also get the appropriate permissions to ensure that the new user can use and access them.
+/etc/shadow = Where encrypted passwords are stored
+/etc/
+
+# Make the administrative user account member of the group wheel
+usermod -aG wheel <username>
+
+# Add a user, create a home dir, uid, and add 2 groups
+useradd -m -u <uid> -G <groupname1>, <groupname2> <username>
+
+# Change password for user
+passwd <username>
+
+# Delete users
+userdel <username>
+
+# Expire account on December 31, 2016
+chage -E 2016-12-31 <username>
+
+# See password management settings for user
+chage -l <username>
+
+# View members of groups
+groupmems -g <groupname> -l
+
+# Make 
+usermod -aG wheel user
+
+# Remove a user, including the complete user environment
+userdel -r
+
+~ MISC USER RELATED COMMANDS ~
+id <username>
+whoami

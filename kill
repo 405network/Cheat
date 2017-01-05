@@ -1,0 +1,6 @@
+# Process related
+# Use this command if you want to kill a process
+kill <PIDnumber>
+
+# If the above command didn't work, try this command. It is level 2 of the 1st command.
+kill -sigkill <PIDnumber>

@@ -1,0 +1,17 @@
+~ CONFIGURE TOOLING ~
+Configure user information for all local repositories
+
+git config --global user.name "[name]"
+# Sets the name you want atached to your commit transactions
+git config --global user.email "[email address]"
+# Sets the email you want atached to your commit transactions
+git config --global color.ui auto
+# Enables helpful colorization of command line output
+
+~ COMMITS TO YOUR GITHUB ACCOUNT ~
+
+1. Navigate to folder you want to create git project and run 'git init <project-name>'
+2. git add .
+3. git commit -m "My original commit"
+4. git remote add orgin <url-where-you-want-to-upload-your-project> (e.g., https://github.com/ssi-daveruffin/Cheat)
+5. git push -f orgin master
